@@ -287,7 +287,7 @@ Successfully created load balancer!
 - Click on Listener tab
 - Click on "HTTP:80" Listener tab.
 - On the opening page Click on "Rules" tab.>>>> click on "Manage tab"
-- Explain how we "forward" or "redirect" tge traffic  
+- Explain how we "forward" or "redirect" the traffic  
 ```
 - Explain the "Monitoring" dashboard of ALB.
 
