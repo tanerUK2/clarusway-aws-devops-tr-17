@@ -2,6 +2,7 @@
 
 Purpose of this hands-on training is to learn Application Load Balancer (ALB) working process. Especially, we’ll cover the details of the AWS solution suite and walk through how to set up a basic ALB.
 
+
 ## Learning Outcomes
 
 At the end of the this hands-on training, students will be able to;
