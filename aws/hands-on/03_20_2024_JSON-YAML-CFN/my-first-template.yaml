@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: >
+  Bundan sonra
+  buraya yazacaklarım
+  ben her ne kadar böyle enter
+  vura vura da yazsam
+  slında hepsi tek bir satırda
+  azılmış olacak. 
+  
+Resources:
+  AslanInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0d7a109bf30624c99
+      InstanceType: t2.micro
+      KeyName: morgoliath-clarusway # Use your own key-pair without .pem
+      SecurityGroups: 
+        - !Ref AslanSecGRP
+      Tags: 
+        - Key: Name
+          Value: Aslan-CFN-instance
+
+  AslanSecGRP:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allows only SSH connection # Required
+      SecurityGroupIngress: 
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
