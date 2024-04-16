@@ -68,7 +68,7 @@ Master password: Pl123456789
 - DB instance class
 
 ```text
-Burstable classes (includes t classes) : db.t2.micro
+Burstable classes (includes t classes) : db.t3.micro
 ```
 
 - Storage
