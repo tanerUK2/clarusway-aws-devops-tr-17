@@ -21,7 +21,9 @@ At the end of the this hands-on training, students will be able to;
 - Part 3 - Manipulating RDS Instance
 
 ## Part 1 - Creating RDS Instance on AWS Management Console
+
 - First, create Security Group for RDS service. Select EC2 dashboard. Select Security Groups from the left-hand menu.
+
 ```text
 Security Group Name: clarusway_db_sg
 Description: clarusway_db_sg
@@ -185,6 +187,7 @@ After that click `Apply` at the bottom of the row.
 
 Then a window that shows the review of the table pops up on the screen. Click Apply, if it's OK.
 ```
+
 - Add another table via SQL command:
 
 ```sql
@@ -198,7 +201,7 @@ CREATE TABLE `clarusway`.`Personal_Info_2` (
   PRIMARY KEY (`ID_number`));
 ```
 
-- Then refresh the "Table" tab to see newly created tables 
+- Then refresh the "Table" tab to see newly created tables
 
 - Add data to the "Personal_Info" table as shown below:
 
@@ -237,9 +240,9 @@ SELECT * FROM clarusway.Personal_Info_1;
 - Try to delete RDS and show that RDS instance again.
 
    -Show that "Create final snapshot?" option should be "Unchecked"
-       
+
               "I acknowledge...." flag is "Checked"
 
- - Type "delete me" nad Click "Delete".
+- Type "delete me" nad Click "Delete".
 
- - Show that Automated Backups are deleted also.
+- Show that Automated Backups are deleted also.
