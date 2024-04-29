@@ -11,7 +11,7 @@
 ```text
 AMI             : Amazon Linux 2023
 Instance Type   : t2.micro
-Network         : clarus-vpc-a
+Network         : clarus-vpc
 Subnet          : clarus-az1a-private-subnet
 Security Group  : 
     Sec.Group Name : Private Sec.group
@@ -29,7 +29,7 @@ Tag             :
 ```text
 AMI             : Amazon Linux 2023
 Instance Type   : t2.micro
-Network         : clarus-vpc-a
+Network         : clarus-vpc
 Subnet          : clarus-az1a-public-subnet
 Security Group  : 
     Sec.Group Name : Public Sec.group(Bastion Host)
@@ -159,7 +159,7 @@ STEP 1: Create NAT Instance
 ```text
 AMI             : ami-0780b09c119334593 (Nat Instance - [amzn-ami-vpc])
 Instance Type   : t2.micro
-Network         : clarus-vpc-a
+Network         : clarus-vpc
 Subnet          : clarus-az1a-public-subnet
 Security Group  : 
     Sec.Group Name : Public Sec.group
