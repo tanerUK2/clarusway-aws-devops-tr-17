@@ -60,9 +60,9 @@ Resources:
 
       UserData: !Base64 |
         #!/bin/bash
-        dnf update -y
-        dnf install -y httpd
-        dnf install -y wget
+        yum update -y
+        yum install -y httpd
+        yum install -y wget
         cd /var/www/html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/N.virginia_1/index.html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/N.virginia_1/N.virginia_1.jpg
@@ -84,9 +84,9 @@ Resources:
 
       UserData: !Base64 |
         #!/bin/bash
-        dnf update -y
-        dnf install -y httpd
-        dnf install -y wget
+        yum update -y
+        yum install -y httpd
+        yum install -y wget
         cd /var/www/html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/geo-japon/index.html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/geo-japon/Tsubasa.jpg
@@ -108,9 +108,9 @@ Resources:
 
       UserData: !Base64 |
         #!/bin/bash
-        dnf update -y
-        dnf install -y httpd
-        dnf install -y wget
+        yum update -y
+        yum install -y httpd
+        yum install -y wget
         cd /var/www/html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/frankfurt/index.html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/frankfurt/frankfurt.jpg
@@ -132,9 +132,9 @@ Resources:
 
       UserData: !Base64 |
         #!/bin/bash
-        dnf update -y
-        dnf install -y httpd
-        dnf install -y wget
+        yum update -y
+        yum install -y httpd
+        yum install -y wget
         chkconfig httpd on
         cd /var/www/html
         wget https://raw.githubusercontent.com/awsdevopsteam/route-53/master/local/index.html
