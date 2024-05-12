@@ -58,7 +58,7 @@ Resources:
   myASG:
     Type: AWS::AutoScaling::AutoScalingGroup
     Properties:
-      AutoScalingGroupName: osvaldo-asg-cfn-17
+      AutoScalingGroupName: taner-asg-cfn-17
       DesiredCapacity: 1
       HealthCheckGracePeriod: 300
       HealthCheckType: ELB
@@ -85,7 +85,7 @@ Resources:
   myALB:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer
     Properties:
-      Name: osvaldo-asg-cfn-17
+      Name: taner-asg-cfn-17
       SecurityGroups: 
         - !Ref mySecGrp 
       Subnets: !Ref mySubnets
@@ -127,7 +127,7 @@ Resources:
               <body>
                   <h1>Testing Application Load Balancer</h1>
                   <h2>Congratulations! You have created an instance from Launch Template</h2>
-                  <h3>This web server is launched from the launch template by Osvaldo via CFN</h3>
+                  <h3>This web server is launched from the launch template by taner via CFN</h3>
                   <p>This instance is created at <b>$DATE_TIME</b></p>
                   <p>Private IP address of this instance is <b>$PRIVATE_IP</b></p>
                   <p>Public IP address of this instance is <b>$PUBLIC_IP</b></p>
@@ -136,7 +136,7 @@ Resources:
               # start apache server
               systemctl start httpd
               systemctl enable httpd
-      LaunchTemplateName: osvaldo-asg-cfn-17
+      LaunchTemplateName: taner-asg-cfn-17
 
   myTargetGrp:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
@@ -147,7 +147,7 @@ Resources:
       HealthCheckProtocol: HTTP
       HealthCheckTimeoutSeconds: 5
       HealthyThresholdCount: 3
-      Name: osvaldo-asg-cfn-17
+      Name: taner-asg-cfn-17
       Port: 80
       Protocol: HTTP
       TargetType: instance
@@ -169,7 +169,7 @@ Resources:
           CidrIp: 0.0.0.0/0
       Tags: 
         - Key: Name
-          Value: osvaldo-cfn-asg-17
+          Value: taner-cfn-asg-17
       VpcId: !Ref myVPC
 
 
